@@ -5,7 +5,6 @@ PATH=$PATH":$HOME/bin"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/garrett/.oh-my-zsh"
 
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -79,10 +78,12 @@ plugins=(
 	vscode
 	autojump
 	themes
+	web-search
 	zsh-autosuggestions
    )
 
 source $ZSH/oh-my-zsh.sh
+source ~/antigen.zsh
 
 # User configuration
 
@@ -131,6 +132,8 @@ alias rbp="source ~/.zshrc"
 
 alias customZshProfileUpdate="cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile && cd ~/OpenSourceProjects/CustomZshProfile"
 
+alias faof='xdg-open $(fzf --height 60% --reverse)'
+
 alias r=ranger-cd
 
 function ranger-cd {
@@ -149,3 +152,5 @@ function ranger-cd {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
