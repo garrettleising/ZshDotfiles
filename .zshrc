@@ -134,7 +134,7 @@ alias rbp="source ~/.zshrc"
 
 alias faof='xdg-open $(fzf --height 60% --reverse)'
 
-alias keybr="google-chrome https://www.keybr.com"
+alias keybr="xdg-open https://www.keybr.com"
 
 alias r=ranger-cd
 
