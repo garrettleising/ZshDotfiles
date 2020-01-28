@@ -132,10 +132,6 @@ alias osp="cd ~/OpenSourceProjects && ls -AlF"
 
 alias rbp="source ~/.zshrc"
 
-
-
-alias customZshProfileUpdate="cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile && cd ~/OpenSourceProjects/CustomZshProfile && git add -A && echo Response: && read response && (echo ($response)) > commitMessage.txt &&  git commit -F commitMessage.txt"
-
 alias faof='xdg-open $(fzf --height 60% --reverse)'
 
 alias keybr="google keybr"
@@ -162,7 +158,7 @@ function ZshGithub {
 	cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile
 	cd ~/OpenSourceProjects/CustomZshProfile
 	git add -A
-	echo -n Commit message: 
+	echo -n "Commit message: " 
 	read response
 	echo -n $response > commitMessage.txt
 	git commit -F commitMessage.txt
