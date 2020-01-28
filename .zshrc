@@ -87,7 +87,9 @@ source ~/antigen.zsh
 
 # User configuration
 
+wal -i ./Pictures/Wallpapers/Abstract/OrangeRed.jpeg
 screenfetch -p
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -130,9 +132,11 @@ alias osp="cd ~/OpenSourceProjects && ls -AlF"
 
 alias rbp="source ~/.zshrc"
 
-alias customZshProfileUpdate="cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile && cd ~/OpenSourceProjects/CustomZshProfile"
+alias customZshProfileUpdate="cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile && cd ~/OpenSourceProjects/CustomZshProfile && git add -A && echo testing alias- > hello.txt &&  git commit -F hello.txt"
 
 alias faof='xdg-open $(fzf --height 60% --reverse)'
+
+alias keybr="google keybr"
 
 alias r=ranger-cd
 
@@ -152,5 +156,3 @@ function ranger-cd {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
