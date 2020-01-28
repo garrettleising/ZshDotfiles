@@ -132,7 +132,9 @@ alias osp="cd ~/OpenSourceProjects && ls -AlF"
 
 alias rbp="source ~/.zshrc"
 
-alias customZshProfileUpdate="cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile && cd ~/OpenSourceProjects/CustomZshProfile && git add -A && echo testing alias- > hello.txt &&  git commit -F hello.txt"
+
+
+alias customZshProfileUpdate="cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile && cd ~/OpenSourceProjects/CustomZshProfile && git add -A && echo Response: && read response && (echo ($response)) > commitMessage.txt &&  git commit -F commitMessage.txt"
 
 alias faof='xdg-open $(fzf --height 60% --reverse)'
 
@@ -156,3 +158,14 @@ function ranger-cd {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
+function ZshGithub {
+	cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile
+	cd ~/OpenSourceProjects/CustomZshProfile
+	git add -A
+	echo -n Commit message: 
+	read response
+	echo -n $response > commitMessage.txt
+	git commit -F commitMessage.txt
+	rm -f commitMessage.txt
+	git push
+}	
