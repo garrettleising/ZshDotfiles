@@ -111,11 +111,14 @@ fi
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
 alias update="sudo apt update && sudo apt upgrade"
 
 alias ma="vim ~/.zshrc"
 
 alias dirjs="jsondir"
+
+alias switchToBash="chsh -s $(which bash)"
 
 alias ..="cd .."
 alias ...="cd ../.."
