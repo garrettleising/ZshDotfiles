@@ -134,7 +134,9 @@ alias osp="cd ~/OpenSourceProjects && ls -AlF"
 
 alias rbp="source ~/.zshrc"
 
-alias faof='xdg-open $(fzf --height 60% --reverse)'
+alias hypetrain="sl"
+
+alias afk="cmatrix -s"
 
 alias keybr="xdg-open https://www.keybr.com"
 
@@ -166,4 +168,12 @@ function ZshGithub {
 	git commit -F commitMessage.txt
 	rm -f commitMessage.txt
 	git push
-}	
+}
+
+#Find and open file
+function faof {
+	local path_variable=$(fzf --height 60% --reverse)
+	xdg-open $path_variable
+	cd $(dirname $path_variable)
+}
+
