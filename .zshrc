@@ -136,7 +136,7 @@ alias rbp="source ~/.zshrc"
 
 alias hypetrain="sl"
 
-alias afk="cmatrix -s"
+alias afk="cmatrix -s -b"
 
 alias keybr="xdg-open https://www.keybr.com"
 
@@ -176,4 +176,3 @@ function faof {
 	xdg-open $path_variable
 	cd $(dirname $path_variable)
 }
-
