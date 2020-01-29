@@ -87,7 +87,7 @@ source ~/antigen.zsh
 
 # User configuration
 
-wal -i ./Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
+wal -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
 
 screenfetch -p
 
