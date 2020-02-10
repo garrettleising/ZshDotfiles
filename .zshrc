@@ -135,8 +135,8 @@ alias osp="cd ~/OpenSourceProjects && ls -AlF"
 alias rbp="source ~/.zshrc"
 
 alias hypetrain="sl"
-
 alias afk="cmatrix -s -b"
+alias randoWal="wpg -m"
 
 alias keybr="xdg-open https://www.keybr.com"
 
