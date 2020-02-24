@@ -80,6 +80,9 @@ plugins=(
 	themes
 	web-search
 	zsh-autosuggestions
+	docker
+	docker-compose
+	docker-machine
    )
 
 source $ZSH/oh-my-zsh.sh
@@ -176,3 +179,7 @@ function faof {
 	xdg-open $path_variable
 	cd $(dirname $path_variable)
 }
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
