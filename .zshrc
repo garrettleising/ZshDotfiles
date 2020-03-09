@@ -90,9 +90,12 @@ source ~/antigen.zsh
 
 # User configuration
 
-wal -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
+# Line below changes the color of the terminal
+wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
 
-screenfetch -p
+neofetch
+
+#screenfetch -p
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
