@@ -91,7 +91,7 @@ source ~/antigen.zsh
 # User configuration
 
 # Line below changes the color of the terminal
-wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
+# wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
 
 neofetch
 
