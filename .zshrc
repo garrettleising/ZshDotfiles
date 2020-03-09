@@ -94,7 +94,6 @@ source ~/antigen.zsh
 # wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
 
 neofetch
-
 #screenfetch -p
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
