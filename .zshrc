@@ -126,7 +126,7 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+#----------------------------------------ALiases-------------------------------------------------
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
@@ -138,6 +138,9 @@ alias dirjs="jsondir"
 
 alias switchToBash="chsh -s $(which bash)"
 
+alias rconnection="nmcli radio wifi off && nmcli radio wifi on"
+
+# Directory Changes
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -145,11 +148,13 @@ alias .....="cd ../../../.."
 alias home="cd ~/"
 alias osp="cd ~/OpenSourceProjects && ls -AlF"
 
-alias rbp="source ~/.zshrc"
+alias rbp="source ~/.zshrc" # rbp = restart bash process
 
+# Silly / Just for fun
 alias hypetrain="sl"
 alias afk="cmatrix -s -b"
 alias randoWal="wpg -m"
+
 
 alias keybr="xdg-open https://www.keybr.com"
 
