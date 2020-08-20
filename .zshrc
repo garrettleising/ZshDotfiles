@@ -196,6 +196,20 @@ function faof {
 	cd $(dirname $path_variable)
 }
 
+#Script to remove duplicate files or photos
+function removeDuplicates() {
+	for d in ./*/; do (cd "$d" && rm *\(1\)*); done
+}
+
+#Change photos from HEIC to JPG in directory
+funtion convertHeic() {
+for f in *.HEIC; do (heif-convert $f $(basename $f .HEIC)"(converted)".jpg && rm $f); done
+}
+
+#Change photos from HEIC to JPG in subdirectories
+function convertSubHeic() {
+	for d in ./*/; do (cd "$d" && convertHeic); done
+}
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
