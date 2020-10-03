@@ -18,7 +18,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias home="cd ~/"
-alias osp="cd ~/OpenSourceProjects && ls -AlF"
+alias p="cd ~/Projects && ls -AlF" # projects
 
 alias st="exec zsh" # st = source terminal
 
@@ -49,17 +49,12 @@ function ranger-cd {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
-function ZshGithub {
-	cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile
-	cp ~/.zprofile ~/OpenSourceProjects/CustomZshProfile
-	cd ~/OpenSourceProjects/CustomZshProfile
-	git add -A
-	echo -n "Commit message: " 
-	read response
-	echo -n $response > commitMessage.txt
-	git commit -F commitMessage.txt
-	rm -f commitMessage.txt
-	git push
+function ZshUpdate {
+	cp ~/.zshrc ~/Projects/ZshDotfiles
+	cp ~/.zprofile ~/Projects/ZshDotfiles
+	cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/zeta.zsh-theme ~/Projects/ZshDotfiles/themes
+	cp ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/garrett.zsh-theme ~/Projects/ZshDotfiles/themes
+	cd ~/Projects/ZshDotfiles
 }
 
 #Find and open file

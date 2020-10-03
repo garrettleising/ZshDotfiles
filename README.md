@@ -1,8 +1,17 @@
-# CustomZshProfile
+# ZshDotfiles
 Custom zsh profile with aliases and themes that I use
 
-#Requirements:
+## Install
 
-- Uses OH-MY-ZSH
-- Uses Zeta as theme which also needs to be downloaded online
-- Uses pywal for the background and color of terminal
+### Step 1: Install OhMyZsh if not already installed
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Step 2: Install personal themes and plugins for OhMyZsh
+
+```
+sh install.sh
+```
+
