@@ -52,7 +52,6 @@ function ranger-cd {
 function ZshGithub {
 	cp ~/.zshrc ~/OpenSourceProjects/CustomZshProfile
 	cp ~/.zprofile ~/OpenSourceProjects/CustomZshProfile
-	cp -r ~/.oh-my-zsh/custom ~/OpenSourceProjects/CustomZshProfile/
 	cd ~/OpenSourceProjects/CustomZshProfile
 	git add -A
 	echo -n "Commit message: " 
