@@ -1,12 +1,17 @@
 #----------------------------------------Commands to Run-----------------------------------------
 neofetch
+
+# wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
+
+#screenfetch -p
+
 #----------------------------------------ALiases-------------------------------------------------
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
 alias update="sudo apt update && sudo apt upgrade"
 
-alias ma="vim ~/.profile.sh"
+alias ma="vim ~/.zprofile"
 
 alias switchToBash="chsh -s $(which bash)"
 

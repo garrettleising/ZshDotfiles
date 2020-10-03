@@ -90,17 +90,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-#-------------------------My Personal configuration on startup-----------
-# Line below changes the color of the terminal
-# wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-#screenfetch -p
-
-#------------------------------------------------------------------------
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
