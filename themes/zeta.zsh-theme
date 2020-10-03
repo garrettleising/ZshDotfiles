@@ -1,6 +1,6 @@
-# garrett theme for oh-my-zsh
+# Zeta theme for oh-my-zsh
 # Tested on Linux, Unix and Windows under ANSI colors.
-# My own custom theme based on the zeta theme
+# Copyright: Skyler Lee, 2015
 
 # Colors: black|red|blue|green|yellow|magenta|cyan|white
 local black=$fg[black]
@@ -99,7 +99,9 @@ function get_space {
 function print_prompt_head {
     local left_prompt="\
 %{$blue%}# \
-%{$green_bold%}$(get_usr_name): \
+%{$green_bold%}$(get_usr_name)\
+%{$blue%}@\
+%{$cyan_bold%}$(get_box_name): \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%}\
 $(get_git_prompt) "
     local right_prompt="%{$blue%}($(get_time_stamp))%{$reset_color%} "
