@@ -98,7 +98,7 @@ function get_space {
 # > command
 function print_prompt_head {
     local left_prompt="\
-%{$blue%}# \
+%{$red_bold%}# \
 %{$green_bold%}$(get_usr_name): \
 %{$yellow_bold%}$(get_current_dir)%{$reset_color%}\
 $(get_git_prompt) "
@@ -108,7 +108,7 @@ $(get_git_prompt) "
 
 function get_prompt_indicator {
     if [[ $? -eq 0 ]]; then
-        echo "%{$magenta_bold%}$zeta %{$reset_color%}"
+        echo "%{$cyan_bold%}$zeta %{$reset_color%}"
     else
         echo "%{$red_bold%}$zeta %{$reset_color%}"
     fi
