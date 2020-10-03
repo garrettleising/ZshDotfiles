@@ -17,8 +17,8 @@ export ZSH="/home/garrett/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #
-# Favorite Theme: "zeta"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# Favorite Theme: "zeta, powerlevel10k/powerlevel10k"
+ZSH_THEME="garrett"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -98,11 +98,18 @@ source ~/antigen.zsh
 
 # User configuration
 
+#-------------------------My Personal configuration on startup-----------
 # Line below changes the color of the terminal
 # wal --vte -i ~/Pictures/Wallpapers/Favorites/OrangeRedAbstraction.jpeg
 
 neofetch
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 #screenfetch -p
+
+#------------------------------------------------------------------------
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -126,6 +133,12 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+#---------------------------Sources NVM-------------------------------
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 #----------------------------------------ALiases-------------------------------------------------
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
@@ -148,7 +161,7 @@ alias .....="cd ../../../.."
 alias home="cd ~/"
 alias osp="cd ~/OpenSourceProjects && ls -AlF"
 
-alias rbp="source ~/.zshrc" # rbp = restart bash process
+alias rtp="source ~/.zshrc" # rbp = restart bash process
 
 # Silly / Just for fun
 alias hypetrain="sl"
@@ -213,6 +226,3 @@ function convertSubHeic() {
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
