@@ -12,3 +12,5 @@ cp .zprofile ~/
 cp .zshrc ~/
 cp themes/garrett.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
 cp themes/zeta.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
+
+echo "Finished install!"
